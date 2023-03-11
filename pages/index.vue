@@ -1,7 +1,7 @@
 <template>
   <div>
     <the-header></the-header>
-    <main class="container mx-auto px-5">
+    <main class="max-w-7xl mx-auto px-5 lg:px-0">
       <section class="py-10">
         <header class="mb-10">
           <h1 class="mb-5 text-2xl font-bold">
@@ -11,7 +11,7 @@
             Psychologue partage cabinet de consultation situé à SCEAUX (92) dans la partie piétonne de la rue Houdan.
           </p>
           <p>C’est dans ce quartier extrêmement recherché que se situe le Cabinet.
-            Idéalement situé dans la rue piétonne, proche des commerces et des écoles, le cabinet saura vous séduire grâce à une pièce principale spacieuse et lumineuse, qui donne sur la rue Houdan via deux grandes fenêtres. La pièce principale, chaleureuse et confortable, comprend quatre fauteuils, un canapé, un bureau et des chaises.</p>
+            <span class="font-semibold">Idéalement situé dans la rue piétonne</span>, proche des commerces et des écoles, le cabinet saura vous séduire grâce à une pièce principale spacieuse et lumineuse, qui donne sur la rue Houdan via deux grandes fenêtres. La pièce principale, chaleureuse et confortable, comprend quatre fauteuils, un canapé, un bureau et des chaises.</p>
         </header>
 
         <div class="lg:flex lg:gap-8 mb-10">
@@ -23,7 +23,9 @@
               </div>
             </agile>
             <agile class="thumbnails" ref="thumbnails" :options="options2" :as-nav-for="asNavFor2">
-              <div class="slide slide--thumbniail" v-for="(slide, index) in slides" :key="index" :class="`slide--${index}`" @click="$refs.thumbnails.goTo(index)"><img :src="slide"/></div>
+              <div class="slide slide--thumbniail mt-2" v-for="(slide, index) in slides" :key="index" :class="`slide--${index}`" @click="$refs.thumbnails.goTo(index)">
+                <img :src="slide"/>
+              </div>
               <template slot="prevButton"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="m10.5 16 1-1-7-7 7-7-1-1-8 8 8 8z"/></svg></template>
               <template slot="nextButton"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="m5.5 0-1 1 7 7-7 7 1 1 8-8-8-8z"/></svg></template>
             </agile>
@@ -37,20 +39,22 @@
               Une cuisine, séparée et entièrement équipée, est mise à votre disposition. Le chauffage électrique permet de maintenir une température agréable en toute autonomie.</p>
             <p>Le cabinet est également doté du wifi pour les personnes qui en ont besoin.
               L’entrée sécurisée dans l’immeuble se fait grâce à un digicode.</p>
-            <p>
+            <p class="mb-8">
               Indépendance totale des autres praticiens, tout l'appartement est dédié à la consultation.
             </p>
 
             <ul class="chips flex gap-4 mb-8">
-              <li>1 pièce</li>
               <li>35 m <sup>2</sup></li>
+              <li>1 pièce</li>
+              <li>cuisine aménagée</li>
+              <li>SDB</li>
+              <li>toilettes</li>
             </ul>
 
             <ul class="chips flex gap-4 flex-wrap">
-              <li>wi-fi (fibre)</li>
+              <li>wi-fi</li>
+              <li>digicode</li>
               <li>ménage + charges compris</li>
-              <li>cuisine aménagée</li>
-              <li>SDB, toilettes</li>
             </ul>
           </div>
         </div>

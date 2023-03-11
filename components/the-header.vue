@@ -1,6 +1,6 @@
 <template>
   <header class="py-5 border-b border-red-600 font-bold text-lg px-5">
-    <nav class="container mx-auto">
+    <nav class="max-w-7xl mx-auto">
       <ul class="flex gap-5 justify-end">
         <li class="mr-auto">
           <nuxt-link to="/">Home</nuxt-link>

@@ -40,8 +40,8 @@ export default {
   googleFonts: {
     families: {
       // a name with spaces
-      'Playfair+Display': true,
-      'Quicksand': true
+      'Playfair+Display': [400, 600],
+      'Quicksand': [400, 600]
     }
   },
 
