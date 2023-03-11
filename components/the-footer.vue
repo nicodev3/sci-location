@@ -1,13 +1,11 @@
 <template>
-$END$
+  <footer>
+    the footeer
+  </footer>
 </template>
-
 <script>
 export default {
-name: "the-footer"
+  name: 'TheFooter'
 }
 </script>
 
-<style scoped>
-
-</style>
