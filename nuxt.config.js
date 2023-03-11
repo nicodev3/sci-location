@@ -34,7 +34,16 @@ export default {
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-fonts',
   ],
+
+  googleFonts: {
+    families: {
+      // a name with spaces
+      'Playfair+Display': true,
+      'Quicksand': true
+    }
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

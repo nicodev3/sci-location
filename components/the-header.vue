@@ -1,5 +1,5 @@
 <template>
-  <header class="py-5 bg-violet-600 font-bold text-lg text-white px-5">
+  <header class="py-5 border-b border-red-600 font-bold text-lg px-5">
     <nav class="container mx-auto">
       <ul class="flex gap-5 justify-end">
         <li class="mr-auto">

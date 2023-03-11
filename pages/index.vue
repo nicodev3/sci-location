@@ -10,6 +10,8 @@
           <p>
             Psychologue partage cabinet de consultation situé à SCEAUX (92) dans la partie piétonne de la rue Houdan.
           </p>
+          <p>C’est dans ce quartier extrêmement recherché que se situe le Cabinet.
+            Idéalement situé dans la rue piétonne, proche des commerces et des écoles, le cabinet saura vous séduire grâce à une pièce principale spacieuse et lumineuse, qui donne sur la rue Houdan via deux grandes fenêtres. La pièce principale, chaleureuse et confortable, comprend quatre fauteuils, un canapé, un bureau et des chaises.</p>
         </header>
 
         <div class="lg:flex lg:gap-8 mb-10">
@@ -27,17 +29,28 @@
             </agile>
           </div>
           <div class="lg:w-1/2">
-            <p class="mb-2">
-              Appartement de 35m2, toutes commodités, calme, lumineux, équipé pour psychologue et toutes professions libérales (sophrologue, nutritionniste, réflexologue...).
-            </p>
-            <p class="mb-2">
+            <h2>SCEAUX - Appartement centre ville - Cabinet de consultation</h2>
+            <h2 class="mb-5 text-lg">
+              Appartement de 35m2, équipé pour toutes professions libérales (psychologue, sophrologue, nutritionniste, réflexologue...).
+            </h2>
+            <p>L’appartement, d’une surface totale de 35 m2, est équipé en double vitrage, pour une meilleure isolation thermique et phonique. Une petite entrée, dotée d’un placard, fait le lien entre la pièce principale et les pièces d’eau (salle de bain et toilettes à part).
+              Une cuisine, séparée et entièrement équipée, est mise à votre disposition. Le chauffage électrique permet de maintenir une température agréable en toute autonomie.</p>
+            <p>Le cabinet est également doté du wifi pour les personnes qui en ont besoin.
+              L’entrée sécurisée dans l’immeuble se fait grâce à un digicode.</p>
+            <p>
               Indépendance totale des autres praticiens, tout l'appartement est dédié à la consultation.
             </p>
 
-            <ul class="list-disc pl-5 mb-10">
+            <ul class="chips flex gap-4 mb-8">
+              <li>1 pièce</li>
+              <li>35 m <sup>2</sup></li>
+            </ul>
+
+            <ul class="chips flex gap-4 flex-wrap">
               <li>wi-fi (fibre)</li>
-              <li>ménage compris</li>
+              <li>ménage + charges compris</li>
               <li>cuisine aménagée</li>
+              <li>SDB, toilettes</li>
             </ul>
           </div>
         </div>
@@ -54,18 +67,6 @@
           <p>
             Facilement accessible par les transports en commun, la priorité est donnée aux piétons et aux cyclistes, pour lesquels de nombreux aménagements de stationnement sont prévus.
           </p>
-        </div>
-        <div>
-          <h2>
-            Clin d’œil sur le cabinet
-          </h2>
-          <p>C’est dans ce quartier extrêmement recherché que se situe le Cabinet.
-            Idéalement situé dans la rue piétonne, proche des commerces et des écoles, le cabinet saura vous séduire grâce à une pièce principale spacieuse et lumineuse, qui donne sur la rue Houdan via deux grandes fenêtres. La pièce principale, chaleureuse et confortable, comprend quatre fauteuils, un canapé, un bureau et des chaises.</p>
-          <p>L’appartement, d’une surface totale de 35 m2, est équipé en double vitrage, pour une meilleure isolation thermique et phonique. Une petite entrée, dotée d’un placard, fait le lien entre la pièce principale et les pièces d’eau (salle de bain et toilettes à part).
-            Une cuisine, séparée et entièrement équipée, est mise à votre disposition. Le chauffage électrique permet de maintenir une température agréable en toute autonomie.</p>
-          <p>Le cabinet est également doté du wifi pour les personnes qui en ont besoin.
-            L’entrée sécurisée dans l’immeuble se fait grâce à un digicode.</p>
-
         </div>
       </section>
     </main>
@@ -121,12 +122,24 @@ export default {
 }
 </script>
 <style>
+body {
+  font-family: Quicksand, sans-serif;
+}
+
+h1, h2 {
+  font-family: "Playfair Display", serif;
+}
+
 h2 {
   @apply font-semibold text-2xl mb-5;
 }
 
 p {
   @apply mb-5;
+}
+
+.chips li {
+  @apply border border-red-500 bg-neutral-50 rounded p-2;
 }
 
 .slide--thumbniail {
